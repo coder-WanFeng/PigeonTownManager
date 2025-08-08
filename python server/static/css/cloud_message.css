@@ -1,0 +1,289 @@
+body {
+    margin: 0;
+    background: #f8f8fc;
+    font-family: "Microsoft YaHei", Arial, sans-serif;
+}
+#cloud_message_container {
+    max-width: 700px;
+    margin: 4.5rem auto 0 auto;
+    background: #fff;
+    border-radius: 1.2rem;
+    box-shadow: 0 4px 24px #a86aa22a;
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
+    overflow: hidden;
+}
+#top_bar {
+    background: linear-gradient(90deg,#5a55ae 60%,#764ba2 100%);
+    color: #fff;
+    padding: 1.2rem 2rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-radius: 1.2rem 1.2rem 0 0;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+#online_players {
+    font-size: 1rem;
+    font-weight: normal;
+    margin-left: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.2rem;
+}
+.online_player {
+    background: #fff1eb;
+    color: #5a55ae;
+    border-radius: 0.5rem;
+    padding: 0.2rem 0.8rem;
+    font-size: 0.95rem;
+    border: 1px solid #a86aa4;
+}
+.message_box {
+    margin-bottom: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.message_box.mine {
+    align-items: flex-end;
+}
+.playername_I, .playername_other {
+    font-size: 0.95rem;
+    color: #764ba2;
+    margin-bottom: 0.2rem;
+    font-weight: bold;
+}
+.message_I, .message_other {
+    padding: 0.7rem 1.2rem;
+    border-radius: 1.2rem;
+    font-size: 1.08rem;
+    max-width: 70%;
+    word-break: break-all;
+    box-shadow: 0 1px 4px #a86aa42a;
+    background: #fff;
+}
+.message_I {
+    background: linear-gradient(90deg,#a86aa2 60%,#fff1eb 100%);
+    color: #fff;
+    align-self: flex-end;
+}
+.message_other {
+    background: #f3f0fa;
+    color: #321575;
+    align-self: flex-start;
+}
+#ControlDiv {
+    background: #f3f0fa;
+    padding: 1.2rem 2rem 1.2rem 2rem;
+    border-radius: 0 0 1.2rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+#user_inputs {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+#user_inputs input {
+    flex: 1;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #a86aa4;
+    font-size: 1rem;
+    background: #fff;
+    color: #321575;
+}
+#inputarea {
+    width: 100%;
+    min-height: 2.2rem;
+    padding: 0.7rem 1rem;
+    border-radius: 0.7rem;
+    border: 1px solid #a86aa4;
+    font-size: 1.08rem;
+    background: #fff;
+    color: #321575;
+    resize: none;
+    margin-bottom: 0.5rem;
+    box-sizing: border-box;
+}
+#submit {
+    align-self: flex-end;
+    padding: 0.5rem 2.2rem;
+    border-radius: 0.7rem;
+    background: linear-gradient(90deg,#5a55ae 60%,#764ba2 100%);
+    color: #fff;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+    box-shadow: 0 1px 4px #a86aa42a;
+}
+#submit:hover {
+    background: #321575;
+}
+
+body {
+    margin: 0;
+    background: #f8f8fc;
+    font-family: "Microsoft YaHei", Arial, sans-serif;
+}
+#cloud_message_container {
+    width:85%;
+    max-width: 700px;
+    margin: 2.5rem auto 0 auto;
+    background: #fff;
+    border-radius: 1.2rem;
+    box-shadow: 0 4px 24px #a86aa22a;
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
+    overflow: hidden;
+}
+#top_bar {
+    background: linear-gradient(90deg,#5a55ae 60%,#764ba2 100%);
+    color: #fff;
+    padding: 1.2rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-radius: 1.2rem 1.2rem 0 0;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+#online_players {
+    font-size: 1rem;
+    font-weight: normal;
+    margin-left: 1.5rem;
+    display: block;
+}
+.online_player {
+    display: block;
+    background: #fff1eb;
+    color: #5a55ae;
+    border-radius: 0.5rem;
+    padding: 0.2rem 0.8rem;
+    margin: 0.3rem 0;
+    font-size: 0.95rem;
+    border: 1px solid #a86aa4;
+}
+#HistoryDiv {
+    flex: 1;
+    padding: 1.5rem 2rem 1rem 2rem;
+    overflow-y: auto;
+    background: #f8f8fc;
+    min-height: 300px;
+    max-height: 60vh;
+}
+.message_box {
+    margin-bottom: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.message_box.mine {
+    align-items: flex-end;
+}
+.playername_I, .playername_other {
+    font-size: 0.95rem;
+    color: #764ba2;
+    margin-bottom: 0.2rem;
+    font-weight: bold;
+}
+.message_I, .message_other {
+    padding: 0.7rem 1.2rem;
+    border-radius: 1.2rem;
+    font-size: 1.08rem;
+    max-width: 70%;
+    word-break: break-all;
+    box-shadow: 0 1px 4px #a86aa42a;
+    background: #fff;
+}
+.message_I {
+    background: linear-gradient(90deg,#a86aa2 60%,#fff1eb 100%);
+    color: #fff;
+    align-self: flex-end;
+}
+.message_other {
+    background: #f3f0fa;
+    color: #321575;
+    align-self: flex-start;
+}
+#ControlDiv {
+    background: #f3f0fa;
+    padding: 1.2rem 2rem 1.2rem 2rem;
+    border-radius: 0 0 1.2rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+#user_inputs {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+#user_inputs input {
+    flex: 1;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #a86aa4;
+    font-size: 1rem;
+    background: #fff;
+    color: #321575;
+}
+#inputarea {
+    width: 100%;
+    min-height: 2.2rem;
+    padding: 0.7rem 1rem;
+    border-radius: 0.7rem;
+    border: 1px solid #a86aa4;
+    font-size: 1.08rem;
+    background: #fff;
+    color: #321575;
+    resize: none;
+    margin-bottom: 0.5rem;
+}
+#submit {
+    align-self: flex-end;
+    padding: 0.5rem 2.2rem;
+    border-radius: 0.7rem;
+    background: linear-gradient(90deg,#5a55ae 60%,#764ba2 100%);
+    color: #fff;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+    box-shadow: 0 1px 4px #a86aa42a;
+}
+#submit:hover {
+    background: #321575;
+}
+@media (max-width: 800px) {
+    #cloud_message_container { max-width: 100vw; border-radius: 0; }
+    #HistoryDiv, #ControlDiv, #top_bar { padding-left: 1rem; padding-right: 1rem; }
+}
+#custom_dialog{
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color: #321575;
+    background: linear-gradient(135deg,#fff1eb 60%,#a86aa4 100%);
+    border-radius: 1.2rem;
+    box-shadow: 0 4px 24px #764ba2a0;
+    padding: 2.2rem 2.5rem 1.5rem 2.5rem;
+    width:fit-content;
+}
+.custom_dialog_close{
+    position: absolute;
+    right:1rem;
+    top:0.5rem;
+    font-weight: bolder;
+}

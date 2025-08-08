@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=0.5">
+        <title>Pigeon Town 鸽子小镇</title>
+        <link href="/static/css/index.css" rel="stylesheet">
+        <style>
+        /* 可在 index.css 中完善样式 */
+        </style>
+    </head>
+    <body>
+        <!-- 顶部导航栏 -->
+        <div id="top_bar">
+            <a href="/login/" id="turn_login">注册/登录</a>
+            <a href="/cloud_msg/" id="turn_cloud_message">云消息平台</a>
+            <a href="/cloud_map/" id="turn_map" target="_blank">云地图平台</a>
+        </div>
+        <!-- 主内容区 -->
+        <div id="main_content">
+            <!-- 服务器介绍 -->
+            <section id="server_intro">
+                <h1>服务器介绍</h1>
+                <p>
+                    欢迎来到鸽子小镇！本平台为玩家提供多样化的游戏服务器与交流平台，支持云消息、云地图等功能。请先注册/登录后体验完整服务。
+                </p>
+                <a href="https://docs.qq.com/aio/p/scjjpndwdhk383p?p=mbCOpz7JSMXxwb6jEfOqZ2D" id="turn_main" target="_blank">查看详细服务器简介</a>
+            </section>
+            <!-- 服务器详情列表（动态加载） -->
+            <section id="server_list">
+                <h2>各服务器详情</h2>
+                <div id="server_cards"></div>
+            </section>
+        </div>
+        <script type="text/javascript" src="/static/js/jquery.js"></script>
+        <script type="text/JavaScript" src="/static/js/index.js"></script>
+        <script type="text/JavaScript" src="/static/js/server_list.js"></script>
+    </body>
+</html>

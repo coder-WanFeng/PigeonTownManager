@@ -1,0 +1,47 @@
+#这是[P.T.M]的配置文件
+
+
+#基础配置
+#  服务器名字
+server_name: PigeonTownManager
+#  独立服务器(LocalServer)ip
+local_server_ip: 127.0.0.1
+#  独立服务器(LocalServer)端口
+local_server_port: 846
+
+
+#功能管理
+#  是否启用账号管理(/login)(根路由为注册，audit路由为审核，cloud_message路由为云消息)
+
+player_protect: true
+#  使用的GLM API的模型名称
+chat_AI_name: GLM-4-Flash-250414
+#  使用的GLM API的token
+chat_token: 7893688f39b546cd9377dcf98edd612d.vj5IwkSRdeWouyqQ
+#  是否启用AI聊天(使用“-chat 内容”触发)
+chat_with_AI: true
+#  是否启用猫娘苏洛(使用“-苏洛 内容”触发)
+chat_with_CatGirl: true
+#  是否启用自定义AI角色(使用“-RoleName 内容”触发)
+chat_with_CustomRole: true
+#  自定义角色名
+CustomRole_name: PTM
+#  自定义角色prompt提示(注意，只能简短的话)
+CustomRole_prompt: 你是一个名叫PTM的助理
+# 自定义角色记忆有效时长(0为无记忆)
+CustomRole_memory_time: 0
+#  是否启用云消息
+cloud_message: true
+#  是否向本地服务器同步玩家在线信息
+update_player_state: true
+#  是否启用头颅获取(/get_player_head)
+get_player_head: true
+
+
+#参数配置
+#  [账号管理]注册页的ip/端口
+website_reg:
+#  普通玩家获取玩家头颅的间隔(以秒为单位)
+get_player_head_interval: 1800
+#   猫娘的记忆时长(以秒为单位,设为0为禁用记忆)
+cat_girl_memories_time: 300

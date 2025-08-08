@@ -1,0 +1,206 @@
+body{
+    margin:0;
+    padding:0;
+}
+#top_bar{
+    width:100vw;
+    height:3.5rem;
+    top:0;
+    left:0;
+    border-radius:0 0 1rem 1rem ;
+    border-color:#a86aa4ac;
+    border-style: solid;
+    border-width:0 0 0.2rem 0;
+    background: linear-gradient(90deg,#5a55ae 60%,#764ba2 100%);
+    position:fixed;
+    z-index:999999;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:2rem;
+}
+#top_bar a{
+    font-size: 1.15rem;
+    padding: 0.3rem 1.2rem;
+    margin:0.2rem;
+    border-radius:0.5rem;
+    border-style: solid;
+    border-width:0.1rem;
+    background-color:#321575;
+    border-color: #764ba2;
+    color: #fff1eb;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.2s, opacity 0.2s;
+    opacity:1;
+}
+#top_bar a:hover{
+    opacity:0.85;
+    background-color:#5a55ae;
+}
+#main_content{
+    margin-top:4.5rem;
+    padding:2rem 5vw 2rem 5vw;
+    min-height:calc(100vh - 5rem);
+    background: #f8f8fc;
+}
+#server_intro{
+    background: #fff;
+    border-radius:1rem;
+    box-shadow:0 2px 8px #a86aa44c;
+    padding:2rem;
+    margin-bottom:2rem;
+    text-align:center;
+}
+#server_intro h1{
+    font-size:2rem;
+    color:#5a55ae;
+    margin-bottom:1rem;
+}
+#server_intro p{
+    font-size:1.15rem;
+    color:#333;
+    margin-bottom:1rem;
+}
+#server_intro a{
+    font-size:1.1rem;
+    color:#321575;
+    text-decoration:underline;
+    font-weight:500;
+}
+#server_list{
+    background: #fff;
+    border-radius:1rem;
+    box-shadow:0 2px 8px #a86aa44c;
+    padding:2rem;
+}
+#server_list h2{
+    font-size:1.5rem;
+    color:#764ba2;
+    margin-bottom:1.5rem;
+    text-align:left;
+}
+.server_card{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    background:#f3f0fa;
+    border-radius:0.7rem;
+    padding:1rem 1.5rem;
+    margin-bottom:1rem;
+    box-shadow:0 1px 4px #a86aa42a;
+    flex-wrap:wrap;
+}
+.server_name{
+    font-size:1.2rem;
+    font-weight:700;
+    color:#321575;
+    flex:2;
+}
+.server_desc{
+    font-size:1rem;
+    color:#555;
+    flex:3;
+    margin-left:1rem;
+}
+.server_link a{
+    font-size:1rem;
+    color:#5a55ae;
+    text-decoration:underline;
+    font-weight:500;
+}
+.server_status{
+    font-size:1rem;
+    font-weight:600;
+    padding:0.3rem 0.8rem;
+    border-radius:0.5rem;
+    margin-left:1rem;
+}
+.server_status.available{
+    background:#d4f8e8;
+    color:#2e8b57;
+    border:1px solid #2e8b57;
+}
+.server_status.unavailable{
+    background:#ffeaea;
+    color:#c0392b;
+    border:1px solid #c0392b;
+}
+.server_ip_btn {
+    padding: 0.3rem 1rem;
+    border-radius: 0.4rem;
+    background: #5a55ae;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    transition: background 0.2s;
+}
+.server_ip_btn:hover {
+    background: #321575;
+}
+.server_ip_none {
+    padding: 0.3rem 1rem;
+    color: #aaa;
+    font-size: 0.95rem;
+    margin-right: 0.5rem;
+}
+#index_page{
+    position: absolute;
+    height:100vh;
+    width:100%;
+    top:0;
+    left:0;
+    border:none;
+}
+#custom_dialog {
+    position: fixed;
+    left: 0; top: 0; width: 100vw; height: 100vh;
+    background: rgba(60,30,80,0.18);
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.custom_dialog_content {
+    background: linear-gradient(135deg,#fff1eb 60%,#a86aa4 100%);
+    border-radius: 1.2rem;
+    box-shadow: 0 4px 24px #764ba2a0;
+    padding: 2.2rem 2.5rem 1.5rem 2.5rem;
+    min-width: 260px;
+    max-width: 90vw;
+    text-align: center;
+    position: relative;
+    font-size: 1.15rem;
+    color: #321575;
+    animation: dialogPop 0.3s;
+}
+@keyframes dialogPop {
+    0% { transform: scale(0.8); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+#custom_dialog_title{
+    margin-top: -0.5rem;
+    word-break: break-all;
+    font-size: 1.15rem;
+}
+.custom_dialog_close {
+    position: absolute;
+    right: 1.2rem;
+    top: 1.2rem;
+    font-size: 1.5rem;
+    color: #764ba2;
+    cursor: pointer;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+.custom_dialog_close:hover {
+    color: #321575;
+}
+.custom_dialog_msg {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    word-break: break-all;
+    line-height: 2rem;
+}

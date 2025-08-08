@@ -3,9 +3,9 @@
 
 =========================
 
-src 目录下为 服务端插件(minecraft plugin)
+minecraft plugin 目录下为 服务端插件(minecraft plugin)
 
-LocalServer 目录下为 本地服务器(python server)
+python server 目录下为 独立服务器(python server)
 
 =========================
 
